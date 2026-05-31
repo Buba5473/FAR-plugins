@@ -1,0 +1,42 @@
+﻿.Language=English,English
+.Contents Contents
+
+@Contents
+$ #Linux & Network FS Mount Manager - Help#
+  This plugin allows you to natively view, extract, and mount **11 types of Linux and Unix filesystems** inside Windows 10/11 using FAR Manager 3 or WinFSP FUSE interface.
+
+  Supported filesystems:
+  - Btrfs (with Zstd, LZO, Zlib compression)
+  - Ext2 / Ext3 / Ext4 (64bit & metadata checksums)
+  - XFS (v4 / v5 with Bigtime support)
+  - OpenZFS (with Fletcher4 verification)
+  - F2FS (Flash-Friendly File System)
+  - UFS / UFS2, HFS+, APFS, ReiserFS/Reiser4, SquashFS
+
+  #Usage:#
+  1. Open the plugin via the Plugins Menu (#F11#) or Drives Menu (#Alt+F1/F2#).
+  2. To mount a filesystem globally into Windows as a virtual drive, specify the drive letter, filesystem type, source, and click [Mount].
+  3. Network sources (SFTP) support secure authentication via #Login# and #Password# fields.
+
+  See also:
+  @NetworkMounting=Async IOCP Network Mounting@
+  @POSIXPermissions=POSIX Rights Column View@
+@
+
+@NetworkMounting
+$ #Async IOCP Network Mounting#
+  The plugin utilizes a high-performance, asynchronous network engine built on **Windows I/O Completion Ports (IOCP)** and Winsock2.
+
+  When connecting to remote Linux images over the network, data blocks are read in parallel using a sliding window. This approach eliminates latency and delivers multi-gigabit speeds on modern 10GbE network cards.
+
+  If a packet loss or timeout occurs, the error details are dynamically displayed at the bottom of the FAR panel in red, without freezing the manager's user interface.
+@
+
+@POSIXPermissions
+$ #POSIX Rights Column View#
+  The plugin maps native Unix file access permissions directly into a custom FAR panel column.
+  
+  When entering a Linux filesystem partition, the rightmost column will display the classical POSIX mask strings (e.g., #-rwxr-xr-x# or #drwxr-xr-x#). 
+  
+  This feature uses a thread-local memory arena, ensuring zero impact on the system heap and rendering file lists at native NVMe speeds.
+@
