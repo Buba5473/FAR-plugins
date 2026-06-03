@@ -1,0 +1,24 @@
+﻿.Language=English,English
+.PluginContents=Amd64 Hardware Viewer
+
+@Contents
+$ #Amd64 Hardware Viewer - Help#
+  This plugin is a high-performance, multi-engine document and image 
+  viewer optimized for AMD64 processors with AVX2 support.
+
+  It features GPU-accelerated rendering via Direct2D/DirectWrite (Windows) 
+  and Chauvinist GUI VT (far2l on Linux).
+
+  #Hotkeys:#
+    ~+ / -~        - Dynamic hardware zoom (GPU/AVX2)
+    ~Arrows~       - Smooth image/CAD panning
+    ~Ctrl+PageDn~  - Next page (PDF/EPS/EPUB/XPS)
+    ~Ctrl+PageUp~  - Previous page
+    ~F7~           - Search text inside PDF/EPS vector layers
+    ~Ctrl+C~       - Extract text layer to system clipboard
+
+  #Supported Engines:#
+    - WIC (Windows Native Images)
+    - MuPDF (PDF, EPS, EPUB, FB2, XPS)
+    - libdxfrw (AutoCAD DXF/DWG drawings)
+    - libarchive (Direct RAM decompression of ZIP/RAR/CBZ)
