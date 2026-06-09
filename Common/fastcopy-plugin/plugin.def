@@ -1,0 +1,6 @@
+LIBRARY "FastCopyPlugin"
+EXPORTS
+    SetStartupInfoW @1
+    OpenW           @2
+    ConfigureW      @3
+    GetGlobalInfoW  @4
