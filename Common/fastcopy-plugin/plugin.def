@@ -1,0 +1,10 @@
+LIBRARY FarFastCopyPlugin
+
+EXPORTS
+    SetStartupInfoW       @1
+    GetPluginInfoW        @2
+    ProcessDialogEventW   @3
+    ProcessConsoleInputW  @4
+    ProcessSynchroEventW  @5
+    OpenW                 @6
+    ExitFARW              @7
