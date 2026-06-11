@@ -1,0 +1,9 @@
+EXPORTS
+    GetMinFarVersionW
+    SetStartupInfoW
+    GetPluginInfoW
+    ExitFARW
+    ProcessSynchroEventW
+    ProcessConsoleInputW
+    ProcessDialogEventW
+    OpenW
